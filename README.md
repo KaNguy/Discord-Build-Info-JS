@@ -13,7 +13,7 @@ Contributing [here](https://github.com/KaNguy/Discord-Build-Info-JS/blob/master/
 
 
 
-## Reasons to use this
+## Reasons for Usage
 - Gets the build number, hash, and ID with ease
 - Flexible 
 - Versatile
