@@ -11,8 +11,19 @@
 
 `Discord Build Info JS` is a concise and efficient module which asynchronously retrieves the build number, hash, and ID of the talk & text app, Discord. The three clients which are Stable, Canary, and PTB have the retrievable information.  
 
-Contributing [here](#contributing).
-
+# Table of Contents
+1. Overview
+   - [About](#discord-build-info-js)
+   - [Usage Reasons](#reasons-for-usage)
+   - [Installation](#installation)
+2. Documentation
+   - [Starting](#documentation)
+   - [Acquiring Data](#acquiring-the-data)
+   - [Resulting Data](#resulting-data)
+   - [Using the Data](#calling-the-json-data)
+   - [Miscellaneous](#miscellaneous-ways-of-using-the-data)
+3. [Contributing](#contributing)
+4. [License](#license)
 
 
 ## Reasons for Usage
