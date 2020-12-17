@@ -1,6 +1,8 @@
 <div align="center">
   <p>
     <img src="https://github.com/KaNguy/Discord-Build-Info-JS/workflows/discord-build-info-js/badge.svg" alt="Build Status" /></a>
+    <a href="https://www.npmjs.com/package/discord-build-info-js"><img src="https://img.shields.io/npm/v/discord-build-info-js" alt="Version" /></a>
+    <a href=""><img src="https://img.shields.io/npm/dt/discord-build-info-js.svg" alt="Total Downloads" /></a>
     <a href="LICENSE.md"><img src="https://img.shields.io/github/license/KaNguy/discord-build-info-js?color=007ace" alt="License" /></a>
   </p>
 </div>
