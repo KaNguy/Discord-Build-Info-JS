@@ -1,0 +1,49 @@
+# Packages
+node_modules/
+jspm_packages/
+yarn.lock
+
+# Log files
+logs/
+*.log
+
+# Authentication
+deploy/
+
+# Miscellaneous
+.tmp/
+.vscode/
+docs/
+.idea/
+
+# NPM ignore
+.eslintrc.json
+.gitattributes
+.gitignore
+.travis.yml
+webpack.config.js
+.github/
+tests/
+tsconfig.json
+tslint.json
+
+# Gatsby files
+.cache/
+
+# Serverless directories
+.serverless/
+
+# FuseBox cache
+.fusebox/
+
+# DynamoDB Local files
+.dynamodb/
+
+# Microbundle cache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# Snowpack dependency directory
+web_modules/

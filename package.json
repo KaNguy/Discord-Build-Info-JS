@@ -1,0 +1,31 @@
+{
+  "name": "discord-build-info-js",
+  "version": "1.0.0",
+  "description": "A lightweight and organized library which retrieves the client build information from Discord's clients with HTTPS requests.",
+  "main": "src/index.js",
+  "bin": "src/index.js",
+  "scripts": {
+    "test": "node src/index.js"
+  },
+  "keywords": [
+    "javascript",
+    "js",
+    "node",
+    "discord-build",
+    "discord",
+    "discord-javascript",
+    "discord-data",
+    "discord-client",
+    "https"
+  ],
+  "author": "KaNguy",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KaNguy/Discord-Build-Info-JS.git"
+  },
+  "bugs": {
+    "url": "https://github.com/KaNguy/Discord-Build-Info-JS/issues"
+  },
+  "homepage": "https://github.com/KaNguy/Discord-Build-Info-JS/#readme"
+}
