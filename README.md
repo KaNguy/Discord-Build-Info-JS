@@ -22,7 +22,7 @@ Contributing [here](https://github.com/KaNguy/Discord-Build-Info-JS/blob/master/
 - Written in JavaScript
 
 ## Installation
-`npm i discord-build-info-py`
+`npm i discord-build-info-js`
 
 # Documentation
 ## Overview
