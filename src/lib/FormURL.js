@@ -21,26 +21,15 @@ class FormURL {
      * @returns {string[]} - Client data returned
      */
     formURL(release_channel) {
-        if (!release_channel) {
-            release_channel = this.options.client;
-        }
+        release_channel = release_channel ? release_channel
+            : this.options.client ? this.options.client
+                : "";
+
         let baseDomain = `discord.com`;
-        let resulting_domain = baseDomain;
-        let request_data_domain = baseDomain;
-        let abs_release_channel = release_channel.toLowerCase();
-        if (abs_release_channel === `canary` || abs_release_channel === `ptb`) {
-            resulting_domain = `https://${abs_release_channel}.${baseDomain}/app`;
-            request_data_domain = `https://${abs_release_channel}.${baseDomain}`;
-            return [resulting_domain, request_data_domain];
-        } if (abs_release_channel === `stable`) {
-            resulting_domain = `https://${baseDomain}/app`;
-            request_data_domain = `https://${baseDomain}`;
-            return [resulting_domain, request_data_domain];
-        } else {
-            resulting_domain = `https://${baseDomain}/app`;
-            request_data_domain = `https://${baseDomain}`;
-            return [resulting_domain, request_data_domain];
-        }
+        let abs_release_channel = release_channel ? release_channel.toLowerCase() : "";
+        let resulting_domain = (abs_release_channel !== 'stable' && abs_release_channel) ? `https://${abs_release_channel}.${baseDomain}/app` : `https://${baseDomain}/app`;
+        let request_data_domain = (abs_release_channel !== 'stable' && abs_release_channel) ? `https://${abs_release_channel}.${baseDomain}` : `https://${baseDomain}`;
+        return [resulting_domain, request_data_domain];
     }
 
     /** Returns the URLs as an object based on the parameters
