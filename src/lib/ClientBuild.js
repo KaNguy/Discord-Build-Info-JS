@@ -15,7 +15,7 @@ class ClientBuild {
     /** Gets and returns the requested build information using the built-in @module https
      *
      * @param release_channel - Async method will use the stable client if the release channel that is provided does not exist. There are 3 supported release channels: Canary, Stable, PTB.
-     * @returns {Promise<unknown>} - Will return the obtained data as a JSON object which can be called upon, remember to parse it if it does not let you call the objects
+     * @returns {Promise<JSON>} - Will return the obtained data as a JSON object which can be called upon, remember to parse it if it does not let you call the objects
      */
     async getClientBuildInfo(release_channel) {
         if (!release_channel) {
@@ -54,7 +54,7 @@ class ClientBuild {
                             // Gets the build information for the build number and hash
                             //const buildInfoRegex = new RegExp(/Build Number: [0-9]+, Version Hash: [A-Za-z0-9]+/);
                             const buildInfoRegex = /Build Number: [0-9]+, Version Hash: [A-Za-z0-9]+/;
-                            const releaseChannel = release_channel.toLowerCase();
+                            const releaseChannel = release_channel ? release_channel.toLowerCase() : 'stable';
                             /**
                              * Using @Promise<T> to resolve the data
                              */
@@ -98,6 +98,10 @@ class ClientBuild {
                         }
                     }
                 });
+            }).on('error', error => {
+                if (error.code === "ENOTFOUND") {
+                    reject(new Error(`There is no such host as ${error.hostname} (${error.code})`));
+                }
             });
         });
     }
