@@ -1,6 +1,6 @@
 {
   "name": "discord-build-info-js",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A lightweight and organized library which retrieves the client build information from Discord's clients with HTTPS requests.",
   "main": "src/index.js",
   "bin": "src/index.js",
