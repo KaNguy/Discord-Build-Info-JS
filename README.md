@@ -1,6 +1,6 @@
 <div align="center">
   <p>
-    ![Node.js CI](https://github.com/KaNguy/Discord-Build-Info-JS/workflows/Node.js%20CI/badge.svg)
+    <a href="https://www.npmjs.com/package/discord-build-info-js"><img src="https://github.com/KaNguy/Discord-Build-Info-JS/workflows/Node.js%20CI/badge.svg" alt="Node.js CI" /></a>
     <a href="https://www.npmjs.com/package/discord-build-info-js"><img src="https://img.shields.io/npm/v/discord-build-info-js" alt="Version" /></a>
     <a href=""><img src="https://img.shields.io/npm/dt/discord-build-info-js.svg" alt="Total Downloads" /></a>
     <a href="LICENSE.md"><img src="https://img.shields.io/github/license/KaNguy/discord-build-info-js?color=007ace" alt="License" /></a>
