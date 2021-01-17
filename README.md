@@ -1,6 +1,9 @@
 <div align="center">
   <p>
-    <img src="https://github.com/KaNguy/Discord-Build-Info-JS/workflows/discord-build-info-js/badge.svg" alt="Build Status" /></a>
+    <a href="https://github.com/KaNguy/Discord-Build-Info-JS/actions?query=workflow%3A%22Node.js+CI%22"><img src="https://github.com/KaNguy/Discord-Build-Info-JS/workflows/Node.js%20CI/badge.svg" alt="Build Status" /></a>
+    <a href="https://github.com/KaNguy/Discord-Build-Info-JS/actions?query=workflow%3A%22Node.js+Package%22"><img src="https://github.com/KaNguy/Discord-Build-Info-JS/workflows/Node.js%20Package/badge.svg" alt="Node.js Package"></a>
+    <a href="https://www.npmjs.com/package/discord-build-info-js"><img src="https://img.shields.io/npm/v/discord-build-info-js" alt="Version" /></a>
+    <a href="https://www.npmjs.com/package/discord-build-info-js"><img src="https://img.shields.io/npm/dt/discord-build-info-js.svg" alt="Total Downloads" /></a>
     <a href="LICENSE.md"><img src="https://img.shields.io/github/license/KaNguy/discord-build-info-js?color=007ace" alt="License" /></a>
   </p>
 </div>
@@ -9,8 +12,19 @@
 
 `Discord Build Info JS` is a concise and efficient module which asynchronously retrieves the build number, hash, and ID of the talk & text app, Discord. The three clients which are Stable, Canary, and PTB have the retrievable information.  
 
-Contributing [here](https://github.com/KaNguy/Discord-Build-Info-JS/blob/master/README.md#contributing).
-
+# Table of Contents
+1. Overview
+   - [About](#discord-build-info-js)
+   - [Usage Reasons](#reasons-for-usage)
+   - [Installation](#installation)
+2. Documentation
+   - [Starting](#documentation)
+   - [Acquiring Data](#acquiring-the-data)
+   - [Resulting Data](#resulting-data)
+   - [Using the Data](#calling-the-json-data)
+   - [Miscellaneous](#miscellaneous-ways-of-using-the-data)
+3. [Contributing](#contributing)
+4. [License](#license)
 
 
 ## Reasons for Usage
@@ -44,7 +58,7 @@ const clientBuild = new ClientBuild();
 ## Acquiring the Data
 Now that the class has been called, its method(s) can be used to acquire the build number, hash, and ID. To do this, call the class and method with the necessary release channel (this can be stable, canary, or PTB) asynchronously and use the results. Assuming that you have required the module and did the set-up from earlier. These examples will be printing out all of the data that the method considers "raw".  
 
-**Note:** These examples are using the [Simple Method](https://github.com/KaNguy/Discord-Build-Info-JS/blob/master/README.md#simple-method)
+**Note:** These examples are using the [Simple Method](#simple-method)
 
 
 #### Argumentative Approach
@@ -127,7 +141,7 @@ const build_ID = data['buildID'];
 
 
 ## Miscellaneous Ways of Using the Data
-Here is a concise list of ways to use the data with examples. Assuming the method has been called [previously](https://github.com/KaNguy/Discord-Build-Info-JS/blob/master/README.md#acquiring-the-data).
+Here is a concise list of ways to use the data with examples. Assuming the method has been called [previously](#acquiring-the-data).
 
 #### Converting the data into an object array
 ```js
