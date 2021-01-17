@@ -16,7 +16,9 @@
     "discord-javascript",
     "discord-data",
     "discord-client",
-    "https"
+    "https",
+    "discord-build-info-js",
+    "discord-build-info"
   ],
   "author": "KaNguy",
   "license": "Apache-2.0",
