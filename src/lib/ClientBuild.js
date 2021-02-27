@@ -72,8 +72,11 @@ class ClientBuild {
                                     if (regexBuildInfoResults !== null && String(regexBuildInfoResults).match(buildInfoRegex) !== null) {
                                         // Parsed build strings that need separation
                                         let build_strings = regexBuildInfoResults ? regexBuildInfoResults[0].replace(" ", "").split(",") : [];
-                                        if (!build_strings || build_strings === []) {
-                                            reject(new Error('No data was found.'));
+                                        if (!build_strings[0]) {
+                                            reject({
+                                                "error": "No data"
+                                            });
+                                            throw new Error('No data was found.');
                                         }
 
                                         // Gets the buildNumber as a parsed Integer
