@@ -1,5 +1,7 @@
 // Class just to parse strings and decorate them
 // Side note: It's all fancy stuff, don't plan on using this unless you want to see what the data generally looks like
+const { release_channels } = require('../constants/Constants');
+
 
 class ParseStrings {
     /**
@@ -8,7 +10,7 @@ class ParseStrings {
      */
     constructor(options = {}) {
         this.options = options;
-        this.release_channels = ['canary', 'stable', 'ptb']
+        this.release_channels = release_channels;
     }
 
     /**
