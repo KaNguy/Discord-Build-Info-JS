@@ -39,11 +39,10 @@ class FormURL {
      */
     formURLObj(release_channel) {
         const formedURLs = this.formURL(release_channel);
-        const formedURLObjects = {
+        return {
             RESULTING_DOMAIN: formedURLs[0],
             REQUEST_DOMAIN: formedURLs[1]
         };
-        return formedURLObjects;
     }
 }
 
