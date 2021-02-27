@@ -19,7 +19,7 @@ class ClientBuild {
      */
     async getClientBuildInfo(release_channel) {
         if (!release_channel) {
-            release_channel = this.options.client;
+            release_channel = release_channel ? this : this.options.client;
         }
 
         // Gets the URLs based on the release channel
@@ -72,6 +72,9 @@ class ClientBuild {
                                     if (regexBuildInfoResults !== null && String(regexBuildInfoResults).match(buildInfoRegex) !== null) {
                                         // Parsed build strings that need separation
                                         let build_strings = regexBuildInfoResults ? regexBuildInfoResults[0].replace(" ", "").split(",") : [];
+                                        if (!build_strings || build_strings === []) {
+                                            reject(new Error('No data was found.'));
+                                        }
 
                                         // Gets the buildNumber as a parsed Integer
                                         const buildNumber = parseInt(build_strings[0].split(":")[1].replace(" ", ""), 10);
@@ -112,7 +115,7 @@ class ClientBuild {
      * @returns {JSON}
      * @param data
      */
-    reparse(data) {
+    parse(data) {
         return JSON.parse(JSON.stringify(data));
     }
 
