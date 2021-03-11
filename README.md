@@ -1,9 +1,7 @@
 <div align="center">
   <p>
     <a href="https://github.com/KaNguy/Discord-Build-Info-JS/actions?query=workflow%3A%22Node.js+CI%22"><img src="https://github.com/KaNguy/Discord-Build-Info-JS/workflows/Node.js%20CI/badge.svg" alt="Build Status" /></a>
-    <a href="https://github.com/KaNguy/Discord-Build-Info-JS/actions?query=workflow%3A%22Node.js+Package%22"><img src="https://github.com/KaNguy/Discord-Build-Info-JS/workflows/Node.js%20Package/badge.svg" alt="Node.js Package"></a>
-    <a href="https://www.npmjs.com/package/discord-build-info-js"><img src="https://img.shields.io/npm/v/discord-build-info-js" alt="Version" /></a>
-    <a href="https://www.npmjs.com/package/discord-build-info-js"><img src="https://img.shields.io/npm/dt/discord-build-info-js.svg" alt="Total Downloads" /></a>
+    <a href="https://github.com/KaNguy/Discord-Build-Info-JS/releases"><img src="https://shields.io/github/package-json/v/kanguy/discord-build-info-js" alt="Version" /></a>
     <a href="LICENSE.md"><img src="https://img.shields.io/github/license/KaNguy/discord-build-info-js?color=007ace" alt="License" /></a>
   </p>
 </div>
