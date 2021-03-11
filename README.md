@@ -34,7 +34,15 @@
 - Written in JavaScript
 
 ## Installation
-`npm i discord-build-info-js`
+1. Download the asset(s) from the latest release on the [releases page](https://github.com/KaNguy/Discord-Build-Info-JS/releases) or download the latest release here: https://github.com/KaNguy/Discord-Build-Info-JS/raw/main/discord-build-info-js.tar.gz
+2. Unzip or extract the downloaded asset.
+3. Place the extracted asset into your node_modules or place it in a directory that you can call it from.
+4. In your package.json file, add ```"discord-build-info-js": "^1.0.6"``` to your `dependencies` object. Your dependencies should look like this:
+   1. ```json 
+      "dependencies": {
+         "discord-build-info-js": "^1.0.6"
+      } 
+      ```
 
 # Documentation
 ## Overview
