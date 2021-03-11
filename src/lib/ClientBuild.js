@@ -1,6 +1,4 @@
 const FormURL = require('./FormURL.js');
-const ParseStrings = require('./util/ParseStrings');
-const parseStrings = new ParseStrings();
 
 const https = require('https');
 
@@ -110,27 +108,6 @@ class ClientBuild {
                 }
             });
         });
-    }
-
-
-    /** This is simply to avoid the data being returned as a string instead of JSON
-     *
-     * @returns {JSON}
-     * @param data
-     */
-    parse(data) {
-        return JSON.parse(JSON.stringify(data));
-    }
-
-    /** Not really needed but this is sort of the fancy way to see and visualize the data
-     * (May remove this function if it serves no purpose or takes up space)
-     *
-     * @param client_info
-     */
-    glorifyData(client_info) {
-        const parsed_client_info = JSON.parse(JSON.stringify(client_info));
-        let parsedReleaseChannel = parseStrings.capitalizeReleaseChannel(parsed_client_info.releaseChannel);
-        console.log(`Release Channel: ${parsedReleaseChannel}\nBuild Number: ${parsed_client_info.buildNumber}\nBuild Hash: ${parsed_client_info.buildHash}\nBuild ID: ${parsed_client_info.buildID}`);
     }
 }
 
