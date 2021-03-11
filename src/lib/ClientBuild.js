@@ -29,7 +29,7 @@ class ClientBuild {
         // Needs to use a promise in order to asynchronously return the asset file URL
         return new Promise((resolve, reject) => {
             https.get(resulting_domain, callback => {
-                // Listens for data but gets repetitive
+                // Listens for data and stringifies it
                 callback.on('data', rawData => {
                     // Parses the data as a String
                     const data = String(rawData);
