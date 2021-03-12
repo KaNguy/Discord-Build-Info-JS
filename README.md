@@ -34,23 +34,36 @@
 - Written in JavaScript
 
 ## Installation
-1. Download the asset(s) from the latest release on the [releases page](https://github.com/KaNguy/Discord-Build-Info-JS/releases) or download the latest release here: https://github.com/KaNguy/Discord-Build-Info-JS/raw/main/discord-build-info-js.tar.gz
-   1. If you downloaded the assets on the releases page, it is advised that you rename the extracted file, or you can use something like ```"Discord-Build-Info-JS-1.0.6": "^1.0.6"``` to your package.json file.
-2. Unzip or extract the downloaded asset.
-3. Place the extracted asset into your node_modules or place it in a directory that you can call it from.
-4. In your package.json file, add ```"discord-build-info-js": "^1.0.6"``` to your `dependencies` object. Your dependencies should look like this:
-   1. ```json 
-      "dependencies": {
-         "discord-build-info-js": "^1.0.6"
-      } 
-      ```
+1. Primary Installation
+      1. Set up an `.npmrc` file and make sure you have this basic information in order to authenticate the package. 
+         ```
+         @kanguy:registry=https://npm.pkg.github.com
+         //npm.pkg.github.com/:_authToken=YOUR_TOKEN_HERE
+         ```
+      2. When you have set the `.npmrc` file up, use the command line to install it or install it with the package.json file.
+         1. Command Line:  
+            `npm install @kanguy/discord-build-info-js@VERSION`
+         2. Via package.json:  
+            `"@kanguy/discord-build-info-js": "VERSION"`
+2. Manual Installation
+   1. Download the asset(s) from the latest release on the [releases page](https://github.com/KaNguy/Discord-Build-Info-JS/releases) or download the latest release here: https://github.com/KaNguy/Discord-Build-Info-JS/raw/main/discord-build-info-js.tar.gz
+      1. If you downloaded the assets on the releases page, it is advised that you rename the extracted file, so you can add the module to your package.json file.
+   2. Unzip or extract the downloaded asset.
+   3. Place the extracted asset into your node_modules or place it in a directory that you can call it from.
+   4. In your package.json file, add ```"discord-build-info-js": "^VERSION"``` to your `dependencies` object. Your dependencies should look like this:
+      1. ```json 
+         "dependencies": {
+            "discord-build-info-js": "^VERSION"
+         } 
+         ```    
 
 # Documentation
 ## Overview
 This is the full documentation for `Discord Build Info JS`. Please do read the documentation as it will be extremely useful. Thank you!
 
 ## Using the module
-To use the module in general, the module needs to be required and `ClientBuild()` is the main focus of using it.  
+To use the module in general, the module needs to be required and `ClientBuild()` is the main focus of using it.
+   - **Notice:** If you installed the package locally and manually, use the name of the folder that contains all the contents. Otherwise, call the package by `@kanguy/discord-build-info-js` assuming that it is already installed via GitHub packages.
 
 #### Prolonged method
 ```js
